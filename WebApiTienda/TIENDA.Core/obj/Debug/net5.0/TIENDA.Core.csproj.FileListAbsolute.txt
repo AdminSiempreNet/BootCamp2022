@@ -1,0 +1,12 @@
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\bin\Debug\net5.0\TIENDA.Core.deps.json
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\bin\Debug\net5.0\TIENDA.Core.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\bin\Debug\net5.0\TIENDA.Core.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.csproj.AssemblyReference.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.AssemblyInfoInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.AssemblyInfo.cs
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.csproj.CoreCompileInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\refint\TIENDA.Core.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\TIENDA.Core.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Core\obj\Debug\net5.0\ref\TIENDA.Core.dll

@@ -1,0 +1,17 @@
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Data.SqlServer.deps.json
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Data.SqlServer.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Data.SqlServer.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.csproj.AssemblyReference.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.AssemblyInfoInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.AssemblyInfo.cs
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.csproj.CoreCompileInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\refint\TIENDA.Data.SqlServer.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\ref\TIENDA.Data.SqlServer.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Core.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Data.Entities.dll
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Core.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\bin\Debug\net5.0\TIENDA.Data.Entities.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.SqlServer\obj\Debug\net5.0\TIENDA.Data.SqlServer.csproj.CopyComplete
