@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W4+BkYziaH5PClN0RpyC6l/eIY/BgM0W6Aa8Avl3XG5TLTC71kQKTLj5jJOT2Uy3a3TTZKrAxpPSjcBHryFQaQ==",
+  "dgSpecHash": "ID6WZRk/YTHGyVcGrDCwV9LjWvbVAPudEAXubW+i2khF3REL5W/4pI5ENMmqO5zeWxQU8ECfsctNZcnv71coDA==",
   "success": true,
-  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
+  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T5vg00xskbTjE5T5kgpVH9IzwAWyuaoglJFVBDj7XUkK1ivaRjPMIb1nubz1xTfgyBb4bocX8OoJ6UC/Em3JYw==",
+  "dgSpecHash": "4Nl/XA30mO9aXD208nZ4KoK4+35LJv4LeVwIYcS9Md+Oz9lCNWeN95xa4snIeWyvWhzDbV3JVqKlcoaRCaGtKg==",
   "success": true,
-  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.WebApi\\TIENDA.WebApi.csproj",
+  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.WebApi\\TIENDA.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\siemp\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\siemp\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

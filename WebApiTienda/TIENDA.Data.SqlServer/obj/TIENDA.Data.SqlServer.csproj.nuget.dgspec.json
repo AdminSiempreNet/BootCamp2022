@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj": {}
+    "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj": {}
   },
   "projects": {
-    "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj": {
+    "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
+        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
         "projectName": "TIENDA.Core",
-        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
+        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj",
         "packagesPath": "C:\\Users\\siemp\\.nuget\\packages\\",
-        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\obj\\",
+        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj": {
+    "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
+        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
         "projectName": "TIENDA.Data.Entities",
-        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
+        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
         "packagesPath": "C:\\Users\\siemp\\.nuget\\packages\\",
-        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\obj\\",
+        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj": {
+    "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
+        "projectUniqueName": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
         "projectName": "TIENDA.Data.SqlServer",
-        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
+        "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
         "packagesPath": "C:\\Users\\siemp\\.nuget\\packages\\",
-        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\obj\\",
+        "outputPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -153,11 +153,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj": {
-                "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj"
+              "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj": {
+                "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Core\\TIENDA.Core.csproj"
               },
-              "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj": {
-                "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj"
+              "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj": {
+                "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj"
               }
             }
           }

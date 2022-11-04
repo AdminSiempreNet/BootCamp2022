@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QMSL02Pf8/sC7xHEj9HDtDNldEKrrWBmsAB6xxV5zKxqbZXPzeWiRedTuaqoYheSiihSdiOR4o0YzFZFE7qnhA==",
+  "dgSpecHash": "FmAER1XhB27vDR7e4dgL+9y9WkyQ36gLo9tXM26esoE0+QW+AbhiiRpT6eIniscI1iR0zf76FOJBEVcyoOH+DA==",
   "success": true,
-  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
+  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\siemp\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\siemp\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

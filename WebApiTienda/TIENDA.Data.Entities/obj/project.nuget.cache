@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aUvuXi2Ayf1T9qtIuSxyYZ5NG3Byb9FQOM0XXWuWh+ooXAKTTv5VXAB8TXhpeTw8LROQ8FF5Q/pSk58Vu57unQ==",
+  "dgSpecHash": "8iaW5GE48Kv+Fcary6c6sBosc7e0va9W3EHjD4HEQdA70opHN4uvKS+Af74dXtDtUm+tANQLWmY/WxBY+kmP5A==",
   "success": true,
-  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
+  "projectFilePath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

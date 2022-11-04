@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TIENDA.Core\TIENDA.Core.csproj" />
+    <ProjectReference Include="..\TIENDA.Data.Entities\TIENDA.Data.Entities.csproj" />
+    <ProjectReference Include="..\TIENDA.Data.SqlServer\TIENDA.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\TIENDA.Models\TIENDA.Models.csproj" />
+  </ItemGroup>
+
+</Project>
