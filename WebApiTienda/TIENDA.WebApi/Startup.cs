@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TIENDA.Data.Services;
 using TIENDA.Data.SqlServer;
 
 namespace TIENDA.WebApi
@@ -32,6 +33,12 @@ namespace TIENDA.WebApi
                         option.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
 
             services.AddScoped<DBConnection>();
+
+            services.AddScoped<ICitiesService, CitiesService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICustomersService, CustomersService>();
+            services.AddScoped<IBillingService, BillingService>();
+            services.AddScoped<IUserService, UsersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

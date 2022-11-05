@@ -34,6 +34,7 @@
       "TIENDA.WebApi/1.0.0": {
         "dependencies": {
           "TIENDA.Data.Entities": "1.0.0",
+          "TIENDA.Data.Services": "1.0.0",
           "TIENDA.Data.SqlServer": "1.0.0",
           "TIENDA.Models": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -1301,6 +1302,20 @@
         },
         "compile": {
           "TIENDA.Data.Entities.dll": {}
+        }
+      },
+      "TIENDA.Data.Services/1.0.0": {
+        "dependencies": {
+          "TIENDA.Core": "1.0.0",
+          "TIENDA.Data.Entities": "1.0.0",
+          "TIENDA.Data.SqlServer": "1.0.0",
+          "TIENDA.Models": "1.0.0"
+        },
+        "runtime": {
+          "TIENDA.Data.Services.dll": {}
+        },
+        "compile": {
+          "TIENDA.Data.Services.dll": {}
         }
       },
       "TIENDA.Data.SqlServer/1.0.0": {
@@ -3683,6 +3698,11 @@
       "sha512": ""
     },
     "TIENDA.Data.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TIENDA.Data.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

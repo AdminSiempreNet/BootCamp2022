@@ -14,7 +14,7 @@ using TIENDA.Models;
 
 namespace TIENDA.Data.Services
 {
-    public class CitiesService
+    public class CitiesService : ICitiesService
     {
         DBConnection _context;
         public CitiesService(DBConnection context)
@@ -49,7 +49,7 @@ namespace TIENDA.Data.Services
                 result.Message = "Error al cargar la lista de ciudades";
                 result.Error = ex;
             }
-            
+
             return result;
 
         }
@@ -67,7 +67,7 @@ namespace TIENDA.Data.Services
                         Name = city.Name,
                         CustomerCount = city.Customers.Count,
                     })
-                    .Where(x=>x.Id == cityId).ToListAsync();
+                    .Where(x => x.Id == cityId).ToListAsync();
 
                 result.IsSuccess = true;
                 result.Message = "OK";
@@ -90,13 +90,13 @@ namespace TIENDA.Data.Services
             var result = new TypedResult<CityModel>();
 
             var entity = new City
-            {               
+            {
                 Name = model.Name,
             };
 
             _context.Cities.Add(entity);
 
-            var res =  await _context.SaveAsync();
+            var res = await _context.SaveAsync();
             if (res.IsSuccess)
             {
                 result.IsSuccess = true;
@@ -120,9 +120,9 @@ namespace TIENDA.Data.Services
         {
             var result = new TypedResult<CityModel>();
 
-            var entity = await _context.Cities.FirstOrDefaultAsync(x=>x.Id == model.Id);
+            var entity = await _context.Cities.FirstOrDefaultAsync(x => x.Id == model.Id);
 
-            if (entity==null)
+            if (entity == null)
             {
                 result.IsSuccess = false;
                 result.Message = "Ciudad no encontrada";
@@ -130,7 +130,7 @@ namespace TIENDA.Data.Services
             }
 
             entity.Name = model.Name;
-            
+
             var res = await _context.SaveAsync();
             if (res.IsSuccess)
             {
@@ -154,7 +154,7 @@ namespace TIENDA.Data.Services
             var result = new MsgResult();
 
             var entity = await _context.Cities
-                .Include(x=>x.Customers)
+                .Include(x => x.Customers)
                 .FirstOrDefaultAsync(x => x.Id == cityId);
 
             if (entity == null)
@@ -166,7 +166,7 @@ namespace TIENDA.Data.Services
             }
 
             //Validamos los datos relacionados
-            if (entity.Customers.Count >0)
+            if (entity.Customers.Count > 0)
             {
                 result.IsSuccess = false;
                 result.Message = "No se puede eliminar la ciudad porque tiene clientes relacionados";

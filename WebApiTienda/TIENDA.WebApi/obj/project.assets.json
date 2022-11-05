@@ -1738,6 +1738,22 @@
           "bin/placeholder/TIENDA.Data.Entities.dll": {}
         }
       },
+      "TIENDA.Data.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TIENDA.Core": "1.0.0",
+          "TIENDA.Data.Entities": "1.0.0",
+          "TIENDA.Data.SqlServer": "1.0.0",
+          "TIENDA.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TIENDA.Data.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TIENDA.Data.Services.dll": {}
+        }
+      },
       "TIENDA.Data.SqlServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5986,6 +6002,11 @@
       "path": "../TIENDA.Data.Entities/TIENDA.Data.Entities.csproj",
       "msbuildProject": "../TIENDA.Data.Entities/TIENDA.Data.Entities.csproj"
     },
+    "TIENDA.Data.Services/1.0.0": {
+      "type": "project",
+      "path": "../TIENDA.Data.Services/TIENDA.Data.Services.csproj",
+      "msbuildProject": "../TIENDA.Data.Services/TIENDA.Data.Services.csproj"
+    },
     "TIENDA.Data.SqlServer/1.0.0": {
       "type": "project",
       "path": "../TIENDA.Data.SqlServer/TIENDA.Data.SqlServer.csproj",
@@ -6000,6 +6021,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "TIENDA.Data.Entities >= 1.0.0",
+      "TIENDA.Data.Services >= 1.0.0",
       "TIENDA.Data.SqlServer >= 1.0.0",
       "TIENDA.Models >= 1.0.0"
     ]
@@ -6039,6 +6061,9 @@
           "projectReferences": {
             "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj": {
               "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Entities\\TIENDA.Data.Entities.csproj"
+            },
+            "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Services\\TIENDA.Data.Services.csproj": {
+              "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.Services\\TIENDA.Data.Services.csproj"
             },
             "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj": {
               "projectPath": "C:\\PRUEBAS\\CURSO PROGRAMACION\\ProyectoTienda\\WebApiTienda\\TIENDA.Data.SqlServer\\TIENDA.Data.SqlServer.csproj"

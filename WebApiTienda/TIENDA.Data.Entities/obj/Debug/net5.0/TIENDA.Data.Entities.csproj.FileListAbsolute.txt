@@ -10,3 +10,15 @@ C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0
 C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\refint\TIENDA.Data.Entities.dll
 C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.pdb
 C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\ref\TIENDA.Data.Entities.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\bin\Debug\net5.0\TIENDA.Data.Entities.deps.json
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\bin\Debug\net5.0\TIENDA.Data.Entities.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\bin\Debug\net5.0\TIENDA.Data.Entities.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.csproj.AssemblyReference.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.AssemblyInfoInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.AssemblyInfo.cs
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.csproj.CoreCompileInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\refint\TIENDA.Data.Entities.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\TIENDA.Data.Entities.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.Entities\obj\Debug\net5.0\ref\TIENDA.Data.Entities.dll

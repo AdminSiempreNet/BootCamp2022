@@ -11,7 +11,7 @@ namespace TIENDA.Data.Entities
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public int CustomerId { get; set; }
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
         
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }

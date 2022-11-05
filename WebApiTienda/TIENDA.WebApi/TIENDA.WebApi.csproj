@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TIENDA.Data.Entities\TIENDA.Data.Entities.csproj" />
+    <ProjectReference Include="..\TIENDA.Data.Services\TIENDA.Data.Services.csproj" />
     <ProjectReference Include="..\TIENDA.Data.SqlServer\TIENDA.Data.SqlServer.csproj" />
     <ProjectReference Include="..\TIENDA.Models\TIENDA.Models.csproj" />
   </ItemGroup>

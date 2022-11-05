@@ -10,9 +10,9 @@ namespace TIENDA.WebApi.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly CustomersService _customerService;
+        private readonly ICustomersService _customerService;
 
-        public CustomersController(CustomersService customersService)
+        public CustomersController(ICustomersService customersService)
         {
             _customerService = customersService;
         }

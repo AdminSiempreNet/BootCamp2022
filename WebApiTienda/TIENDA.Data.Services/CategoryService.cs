@@ -12,7 +12,7 @@ using TIENDA.Models;
 
 namespace TIENDA.Data.Services
 {
-    public class CategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly DBConnection _context;
 
@@ -28,14 +28,14 @@ namespace TIENDA.Data.Services
             try
             {
                 var model = await _context.Categories
-                    .Select( x => new CategoryModel
+                    .Select(x => new CategoryModel
                     {
                         Id = x.Id,
                         Name = x.Name,
                         ProductCount = x.Products.Count
                     }).ToListAsync();
 
-                result.IsSuccess = true;   
+                result.IsSuccess = true;
                 result.Message = "OK";
                 result.Count = model.Count;
                 result.Code = 1;
@@ -60,7 +60,7 @@ namespace TIENDA.Data.Services
             try
             {
                 var model = await _context.Categories
-                    .Where(x=>x.Id == categoryId)
+                    .Where(x => x.Id == categoryId)
                     .Select(x => new CategoryModel
                     {
                         Id = x.Id,
@@ -92,9 +92,9 @@ namespace TIENDA.Data.Services
 
             //Validamos si ya existe una categoría con ese nombre
             var entity = await _context.Categories
-                .FirstOrDefaultAsync(x=>x.Name == model.Name);
+                .FirstOrDefaultAsync(x => x.Name == model.Name);
 
-            if (entity!=null)
+            if (entity != null)
             {
                 result.IsSuccess = false;
                 result.Message = $"Ya existe una categoría con el nombre {model.Name}";
@@ -126,7 +126,7 @@ namespace TIENDA.Data.Services
         public async Task<MsgResult> UpdateAsync(CategoryModel model)
         {
             var result = new MsgResult();
-                        
+
             var entity = await _context.Categories
                 .FirstOrDefaultAsync(x => x.Id == model.Id);
 
@@ -171,9 +171,9 @@ namespace TIENDA.Data.Services
 
             //Validar datos relacionados
             var categoryProducts = await _context.Products
-                .Where(x=>x.CategoryId == categoryId).CountAsync();
+                .Where(x => x.CategoryId == categoryId).CountAsync();
 
-            if (categoryProducts >0)
+            if (categoryProducts > 0)
             {
                 result.IsSuccess = false;
                 result.Message = "No se puede eliminar la categoría porque tiene productos registrados. " +

@@ -12,7 +12,7 @@ using TIENDA.Models;
 
 namespace TIENDA.Data.Services
 {
-    public class CustomersService
+    public class CustomersService : ICustomersService
     {
         private readonly DBConnection _context;
 
@@ -44,7 +44,7 @@ namespace TIENDA.Data.Services
                         Updated = x.Updated,
 
                     })
-                    .OrderByDescending(x=>x.BillingCount)
+                    .OrderByDescending(x => x.BillingCount)
                     .Take(top)
                     .ToListAsync();
 
@@ -73,7 +73,7 @@ namespace TIENDA.Data.Services
             try
             {
                 var model = await _context.Customers
-                    .Where(x=>x.CityId == cityId)
+                    .Where(x => x.CityId == cityId)
                     .Select(x => new CustomerModel
                     {
                         Id = x.Id,
@@ -158,7 +158,7 @@ namespace TIENDA.Data.Services
             try
             {
                 var model = await _context.Customers
-                    .Where(x=>x.Id == customerId)
+                    .Where(x => x.Id == customerId)
                     .Select(x => new CustomerModel
                     {
                         Id = x.Id,
@@ -166,7 +166,7 @@ namespace TIENDA.Data.Services
                         PhoneNumber = x.PhoneNumber,
                         Email = x.Email,
                         CityId = x.CityId,
-                        CityName =  x.City.Name,
+                        CityName = x.City.Name,
                         BillingCount = x.Bills.Count,
 
                         //LastBuy = x.Bills.LastOrDefault() == null ? null : x.Bills.LastOrDefault().Date,
@@ -197,7 +197,7 @@ namespace TIENDA.Data.Services
         public async Task<MsgResult> InsertAsync(CustomerPostModel model)
         {
             var result = new MsgResult();
-                       
+
 
             var entity = new Customer
             {
@@ -230,7 +230,7 @@ namespace TIENDA.Data.Services
         public async Task<MsgResult> UpdateAsync(CustomerPostModel model)
         {
             var result = new MsgResult();
-                        
+
             var entity = await _context.Customers
                 .FirstOrDefaultAsync(x => x.Id == model.Id);
 
@@ -279,7 +279,7 @@ namespace TIENDA.Data.Services
 
             //Validar datos relacionados
             var count = await _context.Billing
-                .Where(x=>x.CustomerId == customerId).CountAsync();
+                .Where(x => x.CustomerId == customerId).CountAsync();
 
             if (count > 0)
             {

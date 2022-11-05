@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Security.AccessControl;
 using System.Threading.Tasks;
+using TIENDA.Core;
 using TIENDA.Data.Entities;
+using TIENDA.Data.Services;
 using TIENDA.Data.SqlServer;
 using TIENDA.Models;
 
@@ -12,34 +16,45 @@ namespace TIENDA.WebApi.Controllers
     [ApiController]
     public class CitiesController : ControllerBase
     {
-        private readonly DBConnection _context;
+        private readonly ICitiesService _citiesService;
 
-        public CitiesController(DBConnection context)
+        public CitiesController(ICitiesService citiesService)
         {
-            _context = context;
+            _citiesService = citiesService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Insert([FromBody] CityModel model)
+
+        [HttpGet]
+        public async Task<IActionResult> ListAsync()
         {
-            City city = new City
-            {
-                Name = model.Name
-            };
+            var result = await _citiesService.ListAsync();
+            return Ok(result);
+        }
 
-            _context.Cities.Add(city);
+        [HttpGet("{cityId}")]
+        public async Task<IActionResult> OneAsync(int cityId)
+        {
+            var result = await _citiesService.OneAsync(cityId);
+            return Ok(result);
+        }
+        [HttpPost]
+        public async Task<IActionResult> InsertAsync(CityModel model)
+        {
+            var result = await _citiesService.InsertAsync(model);
+            return Ok(result);
+        }
 
-            var result = await _context.SaveAsync();
+        [HttpPut]
+        public async Task<IActionResult> UpdateAsync(CityModel model)
+        {
+            var result = await _citiesService.UpdateAsync(model);
+            return Ok(result);
+        }
 
-            if (result.IsSuccess)
-            {
-                result.Message = "Ciudad creada correctamente";
-            }
-            else
-            {
-                result.Message = "Error al registrar la ciudad";
-            }
-
+        [HttpDelete("{cityId}")]
+        public async Task<IActionResult> DeleteAsync(int cityId)
+        {
+            var result = await _citiesService.DeleteAsync(cityId);
             return Ok(result);
         }
     }
