@@ -114,6 +114,8 @@ namespace TIENDA.Data.Services
                 Updated = DateTime.Now,
             };
 
+            _context.Users.Add(entity);
+
             result = await _context.SaveAsync();
 
             if (result.IsSuccess)
@@ -243,6 +245,7 @@ namespace TIENDA.Data.Services
 
             return result;
         }
+
         public Task<MsgResult> RecoverPassword(RecoverPasswordModel model)
         {
             throw new NotImplementedException();

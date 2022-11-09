@@ -13,9 +13,11 @@ namespace TIENDA.Models
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
+
+        public string Token { get; set; }
+        public DateTime TokenExpiration { get; set; }
 
     }
 

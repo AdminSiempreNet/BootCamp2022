@@ -88,7 +88,6 @@ C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debu
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -122,3 +121,5 @@ C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debu
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\TIENDA.WebApi.csproj.CopyComplete
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\TIENDA.WebApi.genruntimeconfig.cache
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\ref\TIENDA.WebApi.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\IdentityModel.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

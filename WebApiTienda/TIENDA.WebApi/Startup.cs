@@ -1,3 +1,5 @@
+using IdentityModel;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,9 +9,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using TIENDA.Data.Services;
 using TIENDA.Data.SqlServer;
@@ -24,15 +28,45 @@ namespace TIENDA.WebApi
         }
 
         public IConfiguration Configuration { get; }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
 
-            services.AddDbContext<DBConnection>(option => 
+            services.AddDbContext<DBConnection>(option =>
                         option.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
 
             services.AddScoped<DBConnection>();
+
+            //Autenticación
+            var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("Authentication:SecretKey"));
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+
+                    //Emisor
+                    ValidateIssuer = true,
+                    ValidIssuer = Configuration["Authentication:Issuer"],
+
+                    //Audiencia
+                    ValidateAudience = true,
+                    ValidAudience = Configuration["Authentication:Audience"],
+
+                    NameClaimType = JwtClaimTypes.Subject,
+                    ValidateLifetime = true,
+                };
+            });
 
             services.AddScoped<ICitiesService, CitiesService>();
             services.AddScoped<ICategoryService, CategoryService>();
@@ -53,6 +87,7 @@ namespace TIENDA.WebApi
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

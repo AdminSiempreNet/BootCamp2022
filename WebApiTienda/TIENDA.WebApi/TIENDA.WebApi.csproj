@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="5.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TIENDA.Data.Entities\TIENDA.Data.Entities.csproj" />
     <ProjectReference Include="..\TIENDA.Data.Services\TIENDA.Data.Services.csproj" />
     <ProjectReference Include="..\TIENDA.Data.SqlServer\TIENDA.Data.SqlServer.csproj" />
