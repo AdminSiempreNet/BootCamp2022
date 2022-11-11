@@ -146,6 +146,23 @@ namespace TIENDA.WebApi.Controllers
         public async Task<IActionResult> RecoverPassword(RecoverPasswordModel model)
         {
             var result = await _userService.RecoverPassword(model);
+
+            if (result.IsSuccess)
+            {
+               var code =  result.Object;
+               //TODO: Enviar email al model.Email con el code
+
+            }
+
+            return Ok(result);
+        }
+
+
+        [AllowAnonymous]
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            var result = await _userService.ResetPassword(model);
             return Ok(result);
         }
 

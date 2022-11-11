@@ -14,6 +14,7 @@ namespace TIENDA.Data.Entities
         public string Email { get; set; }
         public string Password { get; set; }
 
+        public string RecoverPasswordCode { get; set; }
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
 

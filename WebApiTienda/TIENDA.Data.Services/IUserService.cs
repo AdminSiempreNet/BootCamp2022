@@ -18,7 +18,8 @@ namespace TIENDA.Data.Services
         Task<MsgResult> DeleteAsync(int userId);
 
         Task<TypedResult<UserModel>> Login(UserLoginModel model);
-        Task<MsgResult> RecoverPassword(RecoverPasswordModel model); //TODO => Resolver problema
+        Task<MsgResult> RecoverPassword(RecoverPasswordModel model);
+        Task<MsgResult> ResetPassword(ResetPasswordModel model);
         Task<MsgResult> ChangePassword(ChangePasswordModel model);
     }
 }

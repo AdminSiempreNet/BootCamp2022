@@ -195,9 +195,9 @@ namespace TIENDA.Data.Services
             var result = new TypedResult<UserModel>();
 
 
-            var user = await _context.Users.FirstOrDefaultAsync(x=>x.Email == model.Email);
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == model.Email);
 
-            if (user==null)
+            if (user == null)
             {
                 result.IsSuccess = false;
                 result.Message = "Usuario no válido";
@@ -217,8 +217,8 @@ namespace TIENDA.Data.Services
 
             try
             {
-                var query     = await _context.Users
-                    .Where(x=>x.Email == model.Email)
+                var query = await _context.Users
+                    .Where(x => x.Email == model.Email)
                     .Select(x => new UserModel
                     {
                         Id = x.Id,
@@ -246,9 +246,76 @@ namespace TIENDA.Data.Services
             return result;
         }
 
-        public Task<MsgResult> RecoverPassword(RecoverPasswordModel model)
+        public async Task<MsgResult> RecoverPassword(RecoverPasswordModel model)
         {
-            throw new NotImplementedException();
+            var result = new MsgResult();
+
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == model.Email);
+            if (user == null)
+            {
+                result.IsSuccess = false;
+                result.Message = "Correo no registrado";
+                return result;
+            }
+
+            var code = Generator.GenerarCodigo(6);
+            user.RecoverPasswordCode = code;
+
+            result = await _context.SaveAsync();
+            if (result.IsSuccess)
+            {
+                result.Message = "Codigo generado correctamente";
+                result.Object = code;
+            }
+            else
+            {
+                result.Message = "Error al generar el código";
+            }
+
+            return result;
+        }
+
+        public async Task<MsgResult> ResetPassword(ResetPasswordModel model)
+        {
+            var result = new MsgResult();
+
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == model.Email);
+            if (user == null)
+            {
+                result.IsSuccess = false;
+                result.Message = "Correo no registrado";
+                return result;
+            }
+
+            if (user.RecoverPasswordCode == null)
+            {
+                result.IsSuccess = false;
+                result.Message = "Codigo caducado o no existe";
+                return result;
+            }
+
+            if (user.RecoverPasswordCode != model.Code)
+            {
+                result.IsSuccess = false;
+                result.Message = "Codigo no válido";
+                return result;
+            }
+
+            user.Password = model.NewPassword.MD5Encrypt();
+            user.RecoverPasswordCode = null;
+
+
+            result = await _context.SaveAsync();
+            if (result.IsSuccess)
+            {
+                result.Message = "Contraseña restablecida correctamente";
+            }
+            else
+            {
+                result.Message = "Error al restablecer la contraseña";
+            }
+
+            return result;
         }
 
         public async Task<MsgResult> ChangePassword(ChangePasswordModel model)

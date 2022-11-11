@@ -13,5 +13,7 @@ namespace TIENDA.Core
         public int Code { get; set; }
         public int Count { get; set; }
         public Exception Error { get; set; }
+
+        public object Object { get; set; }
     }
 }
