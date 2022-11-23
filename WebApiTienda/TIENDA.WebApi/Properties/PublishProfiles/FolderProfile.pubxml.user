@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-11-23T21:37:28.2417312Z;False|2022-11-23T16:36:58.0776479-05:00;False|2022-11-23T16:36:37.3272013-05:00;False|2022-11-23T16:35:44.0595384-05:00;False|2022-11-23T16:34:56.2158703-05:00;False|2022-11-23T16:33:55.5308117-05:00;False|2022-11-23T16:33:06.5854697-05:00;False|2022-11-23T16:32:23.4402766-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -21,7 +21,6 @@ namespace TIENDA.Data.Services
         Task<MsgResult> InsertAsync(BillingModel model);
         Task<MsgResult> UpdateAsync(BillingModel model);
         Task<MsgResult> DeleteAsync(int billingId);
-        Task<MsgResult> DeleteListAsync(List<int> billingId);
 
 
         //Crear, modificar y eliminar detalles de la factura

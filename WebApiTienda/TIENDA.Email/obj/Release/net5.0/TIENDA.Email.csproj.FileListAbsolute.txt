@@ -1,0 +1,12 @@
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\bin\Release\net5.0\TIENDA.Email.deps.json
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\bin\Release\net5.0\TIENDA.Email.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\bin\Release\net5.0\TIENDA.Email.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.csproj.AssemblyReference.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.AssemblyInfoInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.AssemblyInfo.cs
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.csproj.CoreCompileInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\refint\TIENDA.Email.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\TIENDA.Email.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Email\obj\Release\net5.0\ref\TIENDA.Email.dll

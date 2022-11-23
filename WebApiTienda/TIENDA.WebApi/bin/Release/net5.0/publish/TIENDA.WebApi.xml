@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TIENDA.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:TIENDA.WebApi.Controllers.CategoriesController">
+            <summary>
+            Prueba
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.#ctor(TIENDA.Data.Services.ICategoryService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="categoryService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.ListAsync">
+            <summary>
+            Retorna la lista de categorías
+            </summary>
+            <returns></returns>      
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.One(System.Int32)">
+            <summary>
+            Retorna los datos de una categoría dado el id de la categoría
+            </summary>
+            <param name="categoryId"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.Insert(TIENDA.Models.CategoryModel)">
+            <summary>
+            Agregar una categoría
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.Update(TIENDA.Models.CategoryModel)">
+            <summary>
+            Modificar una categoría
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Eliminar una categoría
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TIENDA.WebApi.Controllers.CitiesController">
+            <summary>
+            Gestión de ciudades
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.#ctor(TIENDA.Data.Services.ICitiesService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="citiesService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.ListAsync">
+            <summary>
+            Retorna la lsita de ciduades
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.OneAsync(System.Int32)">
+            <summary>
+            Retorna los datos del ciudad especificada mediante el id de la ciudad
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.InsertAsync(TIENDA.Models.CityModel)">
+            <summary>
+            Agregar una ciudad
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.UpdateAsync(TIENDA.Models.CityModel)">
+            <summary>
+            Modificar los datos de una ciudad
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CitiesController.DeleteAsync(System.Int32)">
+            <summary>
+            Eliminar una ciudad
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TIENDA.WebApi.Controllers.CustomersController">
+            <summary>
+            Gestión de clientes
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.#ctor(TIENDA.Data.Services.ICustomersService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="customersService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.ListAsync">
+            <summary>
+            Lista de todos los clientes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.ListAsync(System.Int32)">
+            <summary>
+            Lista de clientes filtrado por el id de la ciudad
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.ListTopAsync(System.Int32)">
+            <summary>
+            Top (por defecto 10) de clientes con mayor número de facturas
+            </summary>
+            <param name="top"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.One(System.Int32)">
+            <summary>
+            Datos de un cliente
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.Insert(TIENDA.Models.CustomerPostModel)">
+            <summary>
+            Agregar un nuevo cliente
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.Update(TIENDA.Models.CustomerPostModel)">
+            <summary>
+            Modificar los datos de un cliente
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.CustomersController.Delete(System.Int32)">
+            <summary>
+            Eliminar un cliente
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TIENDA.WebApi.Controllers.ProductsController">
+            <summary>
+            Gestión de productos
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.#ctor(TIENDA.Data.Services.IProductService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="productService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.OneAsync(System.Int32)">
+            <summary>
+            Datos del producto especificado
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.ListAsync(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Lista de prodcutos, filtrados por categoría o mediante una expresión de búsqueda
+            </summary>
+            <param name="categoryId"></param>
+            <param name="findExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.InsertAsync(TIENDA.Models.ProductModel)">
+            <summary>
+            Agregar un nuevo producto
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.UpdateAsync(TIENDA.Models.ProductModel)">
+            <summary>
+            Modificar los datos de un producto
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.ProductsController.DeleteAsync(System.Int32)">
+            <summary>
+            Eliminar un prodcuto
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TIENDA.WebApi.Controllers.UsersController">
+            <summary>
+            Gestión de usuarios
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.#ctor(TIENDA.Data.Services.IUserService,Microsoft.Extensions.Configuration.IConfiguration,TIENDA.Email.EmailService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService"></param>
+            <param name="configuration"></param>
+            <param name="emailService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.List">
+            <summary>
+            Lista de todos los usuarios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.One(System.Int32)">
+            <summary>
+            Datos del usuario especificado mediante el userId
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.InsertAsyc(TIENDA.Models.UserRegisterModel)">
+            <summary>
+            Registrar un nuevo usuario
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.UpdatetAsyc(TIENDA.Models.UserModel)">
+            <summary>
+            Modificar los datos del usuario
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Eliminar un usuario
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.Login(TIENDA.Models.UserLoginModel)">
+            <summary>
+            Autenticar el usuario y obtener el token
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.RecoverPassword(TIENDA.Models.RecoverPasswordModel)">
+            <summary>
+            Recuperar la contraseña
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.ResetPassword(TIENDA.Models.ResetPasswordModel)">
+            <summary>
+            Restablecer la contraseña
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.UsersController.ChangePassword(TIENDA.Models.ChangePasswordModel)">
+            <summary>
+            Cambiar la contraseña
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

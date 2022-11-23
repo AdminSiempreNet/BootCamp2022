@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TIENDA.Email/1.0.0": {
+        "runtime": {
+          "TIENDA.Email.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TIENDA.Email/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
