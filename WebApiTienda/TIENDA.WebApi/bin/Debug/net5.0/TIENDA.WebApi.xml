@@ -4,6 +4,88 @@
         <name>TIENDA.WebApi</name>
     </assembly>
     <members>
+        <member name="T:TIENDA.WebApi.Controllers.BillingController">
+            <summary>
+            Gestión de facturas
+            </summary>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.#ctor(TIENDA.Data.Services.IBillingService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="billingService"></param>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.ListByCustomerAsync(System.Int32)">
+            <summary>
+            Lista de facturas por cliente
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.ListByUserAsync(System.Int32)">
+            <summary>
+            Lista de facturas por usuario
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.ListByRangeAsync(System.DateTime,System.DateTime)">
+            <summary>
+            Lista de facturas entre un rango de fechas
+            </summary>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.OneAsync(System.Int32)">
+            <summary>
+            Datos de una factura
+            </summary>
+            <param name="billingId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.InsertAsync(TIENDA.Models.BillingModel)">
+            <summary>
+            Agregar una nueva factura
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.UpdateAsync(TIENDA.Models.BillingModel)">
+            <summary>
+            Actualizar los datos de una factura
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.DeleteAsync(System.Int32)">
+            <summary>
+            Eliminar una factura
+            </summary>
+            <param name="billingId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.InsertDetailAsync(TIENDA.Models.BillingDetailsModel)">
+            <summary>
+            Agregar un producto a la factura
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.UpdateDetailAsync(TIENDA.Models.BillingDetailsModel)">
+            <summary>
+            Actualizar un producto de la factura
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TIENDA.WebApi.Controllers.BillingController.DeleteDetailAsync(System.Int32)">
+            <summary>
+            Eliminar un producto de la factura
+            </summary>
+            <param name="billingDetailId"></param>
+            <returns></returns>
+        </member>
         <member name="T:TIENDA.WebApi.Controllers.CategoriesController">
             <summary>
             Prueba

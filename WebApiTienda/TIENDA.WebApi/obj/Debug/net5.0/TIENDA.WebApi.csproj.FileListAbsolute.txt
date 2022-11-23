@@ -62,7 +62,6 @@ C:\PRUEBAS\CURSO PROGRAMACION\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\appsettings.Development.json
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\appsettings.json
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.exe
-C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.xml
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.deps.json
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.runtimeconfig.json
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.runtimeconfig.dev.json
@@ -135,3 +134,4 @@ C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debu
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\TIENDA.WebApi.pdb
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\TIENDA.WebApi.genruntimeconfig.cache
 C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\obj\Debug\net5.0\ref\TIENDA.WebApi.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.WebApi\bin\Debug\net5.0\TIENDA.WebApi.xml

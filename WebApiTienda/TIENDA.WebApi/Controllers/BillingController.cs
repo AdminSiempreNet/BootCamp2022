@@ -19,7 +19,10 @@ namespace TIENDA.WebApi.Controllers
     public class BillingController : ControllerBase
     {
         private readonly IBillingService _billingService;
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="billingService"></param>
         public BillingController(IBillingService billingService)
         {
             _billingService = billingService;
