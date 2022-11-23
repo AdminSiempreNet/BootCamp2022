@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace TIENDA.WebApi.Controllers
 {
+    /// <summary>
+    /// Gestión de facturas
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -34,6 +37,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Lista de facturas por usuario
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpGet("ByUser/{userId}")]
         public async Task<IActionResult> ListByUserAsync(int userId)
         {
@@ -41,6 +49,12 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Lista de facturas entre un rango de fechas
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <returns></returns>
         [HttpGet("ByRange/{from}/{to}")]
         public async Task<IActionResult> ListByRangeAsync(DateTime from, DateTime to)
         {
@@ -48,7 +62,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Datos de una factura
+        /// </summary>
+        /// <param name="billingId"></param>
+        /// <returns></returns>
         [HttpGet("{billingId}")]
         public async Task<IActionResult> OneAsync(int billingId)
         {
@@ -56,7 +74,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-        //Crear, modificar y eliminar facturas
+        /// <summary>
+        /// Agregar una nueva factura
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> InsertAsync(BillingModel model)
         {
@@ -64,6 +86,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Actualizar los datos de una factura
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> UpdateAsync(BillingModel model)
         {
@@ -71,6 +98,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar una factura
+        /// </summary>
+        /// <param name="billingId"></param>
+        /// <returns></returns>
         [HttpDelete("{billingId}")]
         public async Task<IActionResult> DeleteAsync(int billingId)
         {
@@ -78,7 +110,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-        //Crear, modificar y eliminar detalles de la factura
+        /// <summary>
+        /// Agregar un producto a la factura
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("Details")]
         public async Task<IActionResult> InsertDetailAsync(BillingDetailsModel model)
         {
@@ -86,6 +122,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Actualizar un producto de la factura
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut("Details")]
         public async Task<IActionResult> UpdateDetailAsync(BillingDetailsModel model)
         {
@@ -93,7 +134,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Eliminar un producto de la factura
+        /// </summary>
+        /// <param name="billingDetailId"></param>
+        /// <returns></returns>
         [HttpDelete("Detailes/{billingDetailId}")]
         public async Task<IActionResult> DeleteDetailAsync(int billingDetailId)
         {
