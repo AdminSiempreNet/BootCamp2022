@@ -6,16 +6,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using TIENDA.Core;
 using TIENDA.Data.Services;
+using TIENDA.Email;
 using TIENDA.Models;
 
 namespace TIENDA.WebApi.Controllers
 {
+    /// <summary>
+    /// Gestión de usuarios
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -23,14 +28,27 @@ namespace TIENDA.WebApi.Controllers
     {
         private readonly IUserService _userService;
         private readonly IConfiguration _configuration;
+        private readonly EmailService _emailService;
 
-        public UsersController(IUserService userService, IConfiguration configuration)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="userService"></param>
+        /// <param name="configuration"></param>
+        /// <param name="emailService"></param>
+        public UsersController(IUserService userService,
+            IConfiguration configuration,
+            EmailService emailService)
         {
             _userService = userService;
             _configuration = configuration;
+            _emailService = emailService;
         }
 
-
+        /// <summary>
+        /// Lista de todos los usuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> List()
         {
@@ -38,6 +56,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(res);
         }
 
+        /// <summary>
+        /// Datos del usuario especificado mediante el userId
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpGet("{userId}")]
         public async Task<IActionResult> One([FromRoute] int userId)
         {
@@ -45,7 +68,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(res);
         }
 
-
+        /// <summary>
+        /// Registrar un nuevo usuario
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> InsertAsyc(UserRegisterModel model)
@@ -55,6 +82,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Modificar los datos del usuario
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> UpdatetAsyc(UserModel model)
         {
@@ -62,6 +94,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar un usuario
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         [HttpDelete("{userId}")]
         public async Task<IActionResult> Delete([FromRoute] int userId)
         {
@@ -69,7 +106,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(res);
         }
 
-
+        /// <summary>
+        /// Autenticar el usuario y obtener el token
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost("Login")]
         public async Task<IActionResult> Login(UserLoginModel model)
@@ -140,7 +181,11 @@ namespace TIENDA.WebApi.Controllers
 
         }
 
-
+        /// <summary>
+        /// Recuperar la contraseña
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost("RecoverPassword")]
         public async Task<IActionResult> RecoverPassword(RecoverPasswordModel model)
@@ -149,15 +194,41 @@ namespace TIENDA.WebApi.Controllers
 
             if (result.IsSuccess)
             {
-               var code =  result.Object;
-               //TODO: Enviar email al model.Email con el code
+                var code = result.Object;
 
+                var to = new List<EmailAddress>
+                   {
+                       new EmailAddress
+                       {
+                            DisplayName = model.Email,
+                            Address = model.Email,
+                       },
+                       new EmailAddress
+                       {
+                           DisplayName = "Eduin",
+                           Address = "eduin1178@gmail.com"
+                       }
+                   };
+
+                var mail = new MailModel
+                {
+                    To = to,
+                    Subject = "Codigo para restablcer clave en TIENDA",
+                    Content = $"Su codigo de verificacion para restablecer la clave es es el siguiente {code}",
+                    IsBodyHtml = true,
+                };
+
+                await _emailService.SendEmailAsync(mail);
             }
 
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Restablecer la contraseña
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost("ResetPassword")]
         public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
@@ -166,7 +237,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Cambiar la contraseña
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost("ChangePassword")]
         public async Task<IActionResult> ChangePassword(ChangePasswordModel model)
         {

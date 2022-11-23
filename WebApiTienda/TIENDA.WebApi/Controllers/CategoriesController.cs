@@ -7,6 +7,10 @@ using TIENDA.Models;
 
 namespace TIENDA.WebApi.Controllers
 {
+
+    /// <summary>
+    /// Prueba
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -14,11 +18,19 @@ namespace TIENDA.WebApi.Controllers
     {
         private readonly ICategoryService _categoryService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="categoryService"></param>
         public CategoriesController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
         }
 
+        /// <summary>
+        /// Retorna la lista de categorías
+        /// </summary>
+        /// <returns></returns>      
         [HttpGet]
         public async Task<IActionResult> ListAsync()
         {
@@ -26,6 +38,10 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Retorna los datos de una categoría dado el id de la categoría
+        /// </summary>
+        /// <param name="categoryId"></param>
         [HttpGet("{categoryId}")]
         public async Task<IActionResult> One([FromRoute] int categoryId)
         {
@@ -33,6 +49,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Agregar una categoría
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Insert([FromBody] CategoryModel model)
         {
@@ -40,6 +61,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Modificar una categoría
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] CategoryModel model)
         {
@@ -47,6 +73,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar una categoría
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
         [HttpDelete("{categoryId}")]
         public async Task<IActionResult> Delete([FromRoute] int categoryId)
         {

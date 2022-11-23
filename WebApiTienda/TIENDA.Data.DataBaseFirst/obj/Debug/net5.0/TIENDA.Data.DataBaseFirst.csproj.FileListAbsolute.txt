@@ -1,0 +1,15 @@
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\bin\Debug\net5.0\TIENDA.Data.DataBaseFirst.deps.json
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\bin\Debug\net5.0\TIENDA.Data.DataBaseFirst.runtimeconfig.json
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\bin\Debug\net5.0\TIENDA.Data.DataBaseFirst.runtimeconfig.dev.json
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\bin\Debug\net5.0\TIENDA.Data.DataBaseFirst.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\bin\Debug\net5.0\TIENDA.Data.DataBaseFirst.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.csproj.AssemblyReference.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.AssemblyInfoInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.AssemblyInfo.cs
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.csproj.CoreCompileInputs.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\refint\TIENDA.Data.DataBaseFirst.dll
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.pdb
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\TIENDA.Data.DataBaseFirst.genruntimeconfig.cache
+C:\PRUEBAS\CURSO PROGRAMACION\ProyectoTienda\WebApiTienda\TIENDA.Data.DataBaseFirst\obj\Debug\net5.0\ref\TIENDA.Data.DataBaseFirst.dll

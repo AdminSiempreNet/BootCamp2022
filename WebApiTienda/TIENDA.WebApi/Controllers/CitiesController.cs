@@ -13,6 +13,9 @@ using TIENDA.Models;
 
 namespace TIENDA.WebApi.Controllers
 {
+    /// <summary>
+    /// Gestión de ciudades
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -20,12 +23,19 @@ namespace TIENDA.WebApi.Controllers
     {
         private readonly ICitiesService _citiesService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="citiesService"></param>
         public CitiesController(ICitiesService citiesService)
         {
             _citiesService = citiesService;
         }
 
-
+        /// <summary>
+        /// Retorna la lsita de ciduades
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> ListAsync()
         {
@@ -33,12 +43,23 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Retorna los datos del ciudad especificada mediante el id de la ciudad
+        /// </summary>
+        /// <param name="cityId"></param>
+        /// <returns></returns>
         [HttpGet("{cityId}")]
         public async Task<IActionResult> OneAsync(int cityId)
         {
             var result = await _citiesService.OneAsync(cityId);
             return Ok(result);
         }
+
+        /// <summary>
+        /// Agregar una ciudad
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> InsertAsync(CityModel model)
         {
@@ -46,6 +67,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Modificar los datos de una ciudad
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> UpdateAsync(CityModel model)
         {
@@ -53,6 +79,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar una ciudad
+        /// </summary>
+        /// <param name="cityId"></param>
+        /// <returns></returns>
         [HttpDelete("{cityId}")]
         public async Task<IActionResult> DeleteAsync(int cityId)
         {

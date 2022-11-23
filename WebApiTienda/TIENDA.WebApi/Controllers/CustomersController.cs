@@ -7,6 +7,9 @@ using TIENDA.Models;
 
 namespace TIENDA.WebApi.Controllers
 {
+    /// <summary>
+    /// Gestión de clientes
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -14,11 +17,19 @@ namespace TIENDA.WebApi.Controllers
     {
         private readonly ICustomersService _customerService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="customersService"></param>
         public CustomersController(ICustomersService customersService)
         {
             _customerService = customersService;
         }
 
+        /// <summary>
+        /// Lista de todos los clientes
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> ListAsync()
         {
@@ -26,6 +37,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Lista de clientes filtrado por el id de la ciudad
+        /// </summary>
+        /// <param name="cityId"></param>
+        /// <returns></returns>
         [HttpGet("ByCity/{cityId}")]
         public async Task<IActionResult> ListAsync([FromRoute] int cityId)
         {
@@ -33,6 +49,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Top (por defecto 10) de clientes con mayor número de facturas
+        /// </summary>
+        /// <param name="top"></param>
+        /// <returns></returns>
         [HttpGet("Top/{top}")]
         public async Task<IActionResult> ListTopAsync([FromRoute] int top = 10)
         {
@@ -40,6 +61,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Datos de un cliente
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <returns></returns>
         [HttpGet("{customerId}")]
         public async Task<IActionResult> One([FromRoute] int customerId)
         {
@@ -47,6 +73,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Agregar un nuevo cliente
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Insert([FromBody] CustomerPostModel model)
         {
@@ -54,6 +85,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Modificar los datos de un cliente
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] CustomerPostModel model)
         {
@@ -61,6 +97,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar un cliente
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <returns></returns>
         [HttpDelete("{customerId}")]
         public async Task<IActionResult> Delete([FromRoute] int customerId)
         {

@@ -17,7 +17,7 @@ namespace TIENDA.Data.SqlServer.Configurations
 
             builder.HasMany(x=>x.Details)
                 .WithOne(x=>x.Bill)
-                .HasForeignKey(x=>x.BillingId);            
+                .HasForeignKey(x=>x.BillingId);
         }
 
     }

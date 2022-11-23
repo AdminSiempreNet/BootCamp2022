@@ -11,6 +11,9 @@ using TIENDA.Models;
 
 namespace TIENDA.WebApi.Controllers
 {
+    /// <summary>
+    /// Gestión de productos
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -18,12 +21,20 @@ namespace TIENDA.WebApi.Controllers
     {
         private readonly IProductService _productService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="productService"></param>
         public ProductsController(IProductService productService)
         {
             _productService = productService;
         }
 
-
+        /// <summary>
+        /// Datos del producto especificado
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <returns></returns>
         [HttpGet("{productId}")]
         public async Task<IActionResult> OneAsync([FromRoute] int productId)
         {
@@ -31,14 +42,25 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Lista de prodcutos, filtrados por categoría o mediante una expresión de búsqueda
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <param name="findExpression"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> ListAsync(int? categoryId = null, 
             string findExpression = null)
         {
             var result = await _productService.ListAsync(categoryId, findExpression);
             return Ok(result);
-        }
+        }   
 
+        /// <summary>
+        /// Agregar un nuevo producto
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> InsertAsync(ProductModel model)
         {
@@ -46,7 +68,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Modificar los datos de un producto
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> UpdateAsync(ProductModel model)
         {
@@ -54,6 +80,11 @@ namespace TIENDA.WebApi.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Eliminar un prodcuto
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <returns></returns>
         [HttpDelete("{productId}")]
         public async Task<IActionResult> DeleteAsync(int productId)
         {
